@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+</head>
+<body class="flex items-center justify-center h-screen">
+    <center>
+        <div id="form" class="shadow-lg w-fit p-2 bg-gray-100 rounded-lg">
+            <br>
+            <h1 class="capitalize text-3xl font-bold mb-4">kalkulator</h1>
+            <h1 class="font-bold text-2xl">Masukan =   <input type="text" class="w-1/2 h-2/5" id="angka1"><br><br></h1>
+            <h1 class="font-bold text-2xl">Masukan =   <input type="text" class="w-1/2 h-2/5" id="angka2"><br><br></h1>
+            
+            <div class="fungsi text-2xl gap-2 grid grid-cols-4">
+                <input type="button" class="border-2" id="tambah" value="+" onclick = "tambah()">
+                <input type="button" class="border-2" id="kurang" value="-" onclick = "kurang()">
+                <input type="button" class="border-2" id="kali" value="x" onclick = "kali()">
+                <input type="button" class="border-2" id="bagi" value="/" onclick = "bagi()">
+            </div>
+    
+            <div class="fungsi text-2xl gap-2 grid grid-cols-3 my-2">
+                <input type="button" class="border-2" id="perbandingan" value="==" onclick = "samaDengan()">
+                <input type="button" class="border-2" id="perbandingan" value="<" onclick = "kurangDari()">
+                <input type="button" class="border-2" id="perbandingan" value=">" onclick = "lebihDari()">
+            </div>
+
+            <div class="fungsi text-2xl gap-2 grid grid-cols-3 my-2">
+                <input type="button" class="border-2" id="perbandingan" value="<=" onclick = "kurangDariSamaDengan()">
+                <input type="button" class="border-2" id="perbandingan" value=">=" onclick = "lebihDariSamaDengan()">
+                <input type="button" class="border-2" id="perbandingan" value="!=" onclick = "tidakSamaDengan()">                
+            </div>
+    
+            <div class="fungsi text-2xl gap-2 grid grid-cols-4 my-2">
+                <input type="button" class="border-2" id="And" value="&&" onclick = "and()">
+                <input type="button" class="border-2" id="Or" value="||" onclick = "or()">
+                <input type="button" class="border-2" id="Not" value="!" onclick = "not()">
+                <input type="button" class="border-2" id="Concat" value="Con" onclick = "concat()">
+            </div>
+
+            <div class="fungsi text-2xl gap-2 grid grid-cols-7 my-2">
+                <input type="button" class="border-2" id="Sin" value="Sin" onclick = "sin()">
+                <input type="button" class="border-2" id="Cos" value="Cos" onclick = "cos()">
+                <input type="button" class="border-2" id="Tan" value="Tan" onclick = "tan()">
+                <input type="button" class="border-2" id="Log" value="Log" onclick = "log()">
+                <input type="button" class="border-2" id="pangkat" value="^" onclick = "pangkat()">
+                <input type="button" class="border-2" id="Modulus" value="%" onclick = "modulus()">
+                <input type="button" class="border-2" id="Akar" value="√" onclick = "akar()">
+            </div>
+            <h1 id="hasil" class="text-3xl border-2 my-2 capitalize h-10"></h1>
+        </div>
+    </center>
+    
+        <script src="kalkulator.js"></script>
+    
+</body>
+</html>
