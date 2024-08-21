@@ -1,12 +1,12 @@
-let bts = document.querySelector(`.a`);
-bts.addEventListener("click", () => {
-    document.body.classList.toggle("active");
-    if(document.body.classList.contains("active")){
-        bts.innerHTML = "C";
-    } else {
-        bts.innerHTML = "C ";
-    } 
-});
+// let bts = document.querySelector(`.a`);
+// bts.addEventListener("click", () => {
+//     document.body.classList.toggle("active");
+//     if(document.body.classList.contains("active")){
+//         bts.innerHTML = "C";
+//     } else {
+//         bts.innerHTML = "C ";
+//     } 
+// });
 //  penjumlahan
 
 function tambah (){
@@ -63,7 +63,6 @@ var lebihDari = function (){
     var nilai2 = document.getElementById("angka2").value;
     var hasil = parseInt (nilai1) > parseInt (nilai2);
     document.getElementById("hasil").innerHTML = hasil;
-    
 }
 
 // lebihDariSamaDengan
